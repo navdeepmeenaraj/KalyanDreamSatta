@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/payment_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:visibility="visible">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableStart="@drawable/vip_ic_up_i"
+            android:gravity="center"
+            android:text="Deposit Money using UPI"
+            android:textColor="@color/colorGreen"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Amount">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/points_to_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bold"
+                android:inputType="number"
+                android:maxLength="5"
+                android:textStyle="bold" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#fad390"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+
+            <TextView
+                android:id="@+id/add500"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hexa"
+                android:text="500"
+                android:textAlignment="center" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/add1000"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hexa"
+                android:text="1000"
+                android:textAlignment="center" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/add2000"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hexa"
+                android:text="2000"
+                android:textAlignment="center" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fad390"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+
+            <TextView
+                android:id="@+id/add3000"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hexa"
+                android:text="3000"
+                android:textAlignment="center" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/add5000"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hexa"
+                android:text="5000"
+                android:textAlignment="center" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+
+            <TextView
+                android:id="@+id/add10000"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/hexa"
+                android:text="10000"
+                android:textAlignment="center" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/minimum_dep_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:drawableStart="@drawable/vip_info"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:text="Minimum Deposit is 500 rs"
+            android:textColor="@color/colorRed"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold"
+            android:padding="8dp"
+            android:text="Select Payment Option"
+            android:textColor="@color/black" />
+
+        <RadioGroup
+            android:id="@+id/payment_options"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <RadioButton
+                android:id="@+id/phonepe_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="PhonePe" />
+
+            <RadioButton
+                android:id="@+id/paytm_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="Paytm" />
+
+            <RadioButton
+                android:id="@+id/gpay_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GPay" />
+
+            <RadioButton
+                android:id="@+id/other_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other" />
+
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/submit_points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/vip_background_pl_n"
+            android:fontFamily="@font/semi"
+            android:padding="14dp"
+            android:text="Deposit Money"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

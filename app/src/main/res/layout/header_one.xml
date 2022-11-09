@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/wallet_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+    <TextView
+        android:id="@+id/howToPlayButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawableTint="@color/white"
+        android:drawableEnd="@drawable/vip_p_button_play_red"
+        android:drawablePadding="4dp"
+        android:fontFamily="@font/medium"
+        android:padding="4dp"
+        android:text="How to Play"
+        android:textAllCaps="false"
+        android:textColor="@color/black" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+    <TextView
+        android:id="@+id/addPoints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawableEnd="@drawable/wallet"
+        android:drawablePadding="4dp"
+        android:drawableTint="@color/white"
+        android:fontFamily="@font/medium"
+        android:padding="4dp"
+        android:text="Add Fund"
+        android:textAllCaps="false"
+        android:textColor="@color/black" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/getPoints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/withdraw"
+        android:drawableTint="@null"
+        android:fontFamily="@font/medium"
+        android:padding="4dp"
+        android:text="Withdrawal"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:visibility="visible" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/button_starline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawableEnd="@drawable/vip_starline_icon"
+        android:fontFamily="@font/medium"
+        android:padding="4dp"
+        android:text="StarLine Games"
+        android:textAllCaps="false"
+        android:textColor="@color/black" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/button_gali"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/vip_dice"
+        android:drawableTint="@color/black"
+        android:fontFamily="@font/medium"
+        android:padding="4dp"
+        android:text="Desawar Games"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:visibility="visible" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+</LinearLayout>
+
